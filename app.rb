@@ -1,5 +1,6 @@
 require 'bundler'
 Bundler.require
+Dotenv.load
 
 options = Selenium::WebDriver::Chrome::Options.new
 options.add_argument('--headless')
