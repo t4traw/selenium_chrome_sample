@@ -7,4 +7,4 @@ options.add_argument('--headless')
 driver = Selenium::WebDriver.for :chrome, options: options
 
 driver.navigate.to 'https://www.google.co.jp/'
-driver.save_screenshot './google.jpg'
+driver.save_screenshot './google.png'
