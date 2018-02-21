@@ -18,3 +18,8 @@ element = driver.find_element(:name, 'login')
 element.send_keys(ENV['YAHOO_USER_ID'])
 driver.find_element(:name, 'btnNext').click
 driver.save_screenshot './yahoo-2.png'
+
+element = driver.find_element(:name, 'passwd')
+element.send_keys(ENV['YAHOO_USER_PASSWORD'])
+driver.find_element(:name, 'btnSubmit').click
+driver.save_screenshot './yahoo-3.png'
